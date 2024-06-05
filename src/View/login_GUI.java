@@ -113,7 +113,7 @@ public class login_GUI extends javax.swing.JFrame {
 if(nomeUsuario != null){
     JOptionPane.showMessageDialog(null, "Bem vindo, " + nomeUsuario);
     dispose();
-    new menu_GUI().setVisible(true);
+    new inicio_GUI().setVisible(true);
 } else {
     JOptionPane.showMessageDialog(null, "Usuário não encontrado ou senha incorreta, tente novamente!");
 }

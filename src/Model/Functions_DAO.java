@@ -1,10 +1,12 @@
 package Model;
 
+import Controller.Database;
 import java.util.ArrayList;
 
 public class Functions_DAO {
     // ArrayList de usuários
     private static ArrayList<Usuario> usuarios = new ArrayList<>();
+    public static Object rivers;
 
     // Classe interna Usuario
     public static class Usuario {
@@ -67,5 +69,30 @@ public static String validateUser() {
     return null; // Retorna null se o usuário não for encontrado
 }
 
+// Rios
 
+ public static class River {
+        public static Object rivers;
+        private String name;
+        private double pH;
+        private double flow;
+
+        public River(String name, double pH, double flow) {
+            this.name = name;
+            this.pH = pH;
+            this.flow = flow;
+        }
+
+        public double getPH() {
+            return pH;
+        }
+
+        @Override
+        public String toString() {
+            return "River{" + "name=" + name + ", pH=" + pH + ", flow=" + flow + '}';
+        }
+    }
 }
+
+
+
