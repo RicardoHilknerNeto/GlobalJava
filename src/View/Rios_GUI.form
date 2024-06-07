@@ -74,9 +74,9 @@
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="rio3_txt" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="rio4_txt" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="rio5_txt" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="nomerio3_txt" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="nomerio4_txt" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="nomerio5_txt" alignment="0" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
@@ -138,7 +138,7 @@
                                       <Component id="jProgressBar2" alignment="1" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="rio3_txt" min="-2" max="-2" attributes="0"/>
+                                  <Component id="nomerio3_txt" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Component id="jProgressBar3" alignment="1" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -146,18 +146,18 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="rio4_txt" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="nomerio4_txt" alignment="1" min="-2" max="-2" attributes="0"/>
                                       <Component id="jProgressBar4" alignment="1" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="rio5_txt" min="-2" max="-2" attributes="0"/>
+                                  <Component id="nomerio5_txt" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Component id="jProgressBar5" alignment="1" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="51" max="32767" attributes="0"/>
+                  <EmptySpace pref="43" max="32767" attributes="0"/>
                   <Component id="teste" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -176,7 +176,7 @@
             <Property name="text" type="java.lang.String" value="Rios"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="rio3_txt">
+        <Component class="javax.swing.JLabel" name="nomerio3_txt">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="ff" red="ff" type="rgb"/>
@@ -187,7 +187,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="S&#xe3;o Francisco"/>
+            <Property name="text" type="java.lang.String" value="null"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
@@ -204,13 +204,13 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Paran&#xe1;"/>
+            <Property name="text" type="java.lang.String" value="null"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JLabel" name="rio4_txt">
+        <Component class="javax.swing.JLabel" name="nomerio4_txt">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="ff" red="ff" type="rgb"/>
@@ -221,13 +221,13 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Tocantins"/>
+            <Property name="text" type="java.lang.String" value="null"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JLabel" name="rio5_txt">
+        <Component class="javax.swing.JLabel" name="nomerio5_txt">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="ff" red="ff" type="rgb"/>
@@ -238,7 +238,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Madeira"/>
+            <Property name="text" type="java.lang.String" value="null"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
@@ -449,6 +449,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="ff" red="ff" type="rgb"/>
             </Property>
+            <Property name="text" type="java.lang.String" value="null"/>
           </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="nomerio1_txtMouseClicked"/>

@@ -26,8 +26,5 @@ public class Rivers {
             return pH;
         }
 
-        @Override
-        public String toString() {
-            return "River{" + "name=" + name + ", pH=" + pH + ", flow=" + flow + '}';
-        }
+       
     }
