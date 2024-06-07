@@ -41,7 +41,11 @@ public class Rios_GUI extends javax.swing.JFrame {
         nomerio4_txt.setText(rivers.get(3).name);
         nomerio5_txt.setText(rivers.get(4).name);
         
-        rio1_txt.setText(String.valueOf(rivers.get(0).pH));
+        phrio1_txt.setText(String.valueOf(rivers.get(0).pH));
+        phrio2_txt.setText(String.valueOf(rivers.get(1).pH));
+        phrio3_txt.setText(String.valueOf(rivers.get(2).pH));
+        phrio4_txt.setText(String.valueOf(rivers.get(3).pH));
+        phrio5_txt.setText(String.valueOf(rivers.get(4).pH));
         
     }
 
@@ -71,11 +75,11 @@ public class Rios_GUI extends javax.swing.JFrame {
         jProgressBar5 = new javax.swing.JProgressBar();
         jLabel4 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        rio1_txt = new javax.swing.JLabel();
-        rio1_txt2 = new javax.swing.JLabel();
-        rio1_txt3 = new javax.swing.JLabel();
-        rio1_txt4 = new javax.swing.JLabel();
-        rio1_txt6 = new javax.swing.JLabel();
+        phrio1_txt = new javax.swing.JLabel();
+        phrio3_txt = new javax.swing.JLabel();
+        phrio5_txt = new javax.swing.JLabel();
+        phrio2_txt = new javax.swing.JLabel();
+        phrio4_txt = new javax.swing.JLabel();
         nomerio1_txt = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         teste = new javax.swing.JButton();
@@ -128,52 +132,53 @@ public class Rios_GUI extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 51));
 
-        rio1_txt.setBackground(new java.awt.Color(255, 255, 51));
-        rio1_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        rio1_txt.setForeground(new java.awt.Color(255, 255, 0));
-        rio1_txt.addMouseListener(new java.awt.event.MouseAdapter() {
+        phrio1_txt.setBackground(new java.awt.Color(255, 255, 51));
+        phrio1_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        phrio1_txt.setForeground(new java.awt.Color(255, 255, 0));
+        phrio1_txt.setText("null");
+        phrio1_txt.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                rio1_txtMouseClicked(evt);
+                phrio1_txtMouseClicked(evt);
             }
         });
 
-        rio1_txt2.setBackground(new java.awt.Color(255, 255, 51));
-        rio1_txt2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        rio1_txt2.setForeground(new java.awt.Color(255, 255, 0));
-        rio1_txt2.setText("50%");
-        rio1_txt2.addMouseListener(new java.awt.event.MouseAdapter() {
+        phrio3_txt.setBackground(new java.awt.Color(255, 255, 51));
+        phrio3_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        phrio3_txt.setForeground(new java.awt.Color(255, 255, 0));
+        phrio3_txt.setText("null");
+        phrio3_txt.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                rio1_txt2MouseClicked(evt);
+                phrio3_txtMouseClicked(evt);
             }
         });
 
-        rio1_txt3.setBackground(new java.awt.Color(255, 255, 51));
-        rio1_txt3.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        rio1_txt3.setForeground(new java.awt.Color(255, 255, 0));
-        rio1_txt3.setText("50%");
-        rio1_txt3.addMouseListener(new java.awt.event.MouseAdapter() {
+        phrio5_txt.setBackground(new java.awt.Color(255, 255, 51));
+        phrio5_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        phrio5_txt.setForeground(new java.awt.Color(255, 255, 0));
+        phrio5_txt.setText("null");
+        phrio5_txt.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                rio1_txt3MouseClicked(evt);
+                phrio5_txtMouseClicked(evt);
             }
         });
 
-        rio1_txt4.setBackground(new java.awt.Color(255, 255, 51));
-        rio1_txt4.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        rio1_txt4.setForeground(new java.awt.Color(255, 255, 0));
-        rio1_txt4.setText("50%");
-        rio1_txt4.addMouseListener(new java.awt.event.MouseAdapter() {
+        phrio2_txt.setBackground(new java.awt.Color(255, 255, 51));
+        phrio2_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        phrio2_txt.setForeground(new java.awt.Color(255, 255, 0));
+        phrio2_txt.setText("null");
+        phrio2_txt.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                rio1_txt4MouseClicked(evt);
+                phrio2_txtMouseClicked(evt);
             }
         });
 
-        rio1_txt6.setBackground(new java.awt.Color(255, 255, 51));
-        rio1_txt6.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        rio1_txt6.setForeground(new java.awt.Color(255, 255, 0));
-        rio1_txt6.setText("50%");
-        rio1_txt6.addMouseListener(new java.awt.event.MouseAdapter() {
+        phrio4_txt.setBackground(new java.awt.Color(255, 255, 51));
+        phrio4_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        phrio4_txt.setForeground(new java.awt.Color(255, 255, 0));
+        phrio4_txt.setText("null");
+        phrio4_txt.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                rio1_txt6MouseClicked(evt);
+                phrio4_txtMouseClicked(evt);
             }
         });
 
@@ -184,25 +189,25 @@ public class Rios_GUI extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(rio1_txt6)
-                    .addComponent(rio1_txt4)
-                    .addComponent(rio1_txt3)
-                    .addComponent(rio1_txt2)
-                    .addComponent(rio1_txt))
+                    .addComponent(phrio4_txt)
+                    .addComponent(phrio2_txt)
+                    .addComponent(phrio5_txt)
+                    .addComponent(phrio3_txt)
+                    .addComponent(phrio1_txt))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(rio1_txt)
+                .addComponent(phrio1_txt)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(rio1_txt4)
+                .addComponent(phrio2_txt)
                 .addGap(8, 8, 8)
-                .addComponent(rio1_txt2)
+                .addComponent(phrio3_txt)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(rio1_txt6)
+                .addComponent(phrio4_txt)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(rio1_txt3))
+                .addComponent(phrio5_txt))
         );
 
         nomerio1_txt.setBackground(new java.awt.Color(255, 255, 51));
@@ -312,7 +317,7 @@ public class Rios_GUI extends javax.swing.JFrame {
                                 .addComponent(nomerio5_txt))
                             .addComponent(jProgressBar5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
                 .addComponent(teste)
                 .addContainerGap())
         );
@@ -332,35 +337,35 @@ public class Rios_GUI extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void rio1_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rio1_txtMouseClicked
+    private void phrio1_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_phrio1_txtMouseClicked
             Database.Rivers();    
             Object madeiraPH = null;
-            rio1_txt.setText(String.valueOf(madeiraPH));
-    }//GEN-LAST:event_rio1_txtMouseClicked
+            phrio1_txt.setText(String.valueOf(madeiraPH));
+    }//GEN-LAST:event_phrio1_txtMouseClicked
 
     private void nomerio1_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nomerio1_txtMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_nomerio1_txtMouseClicked
 
-    private void rio1_txt2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rio1_txt2MouseClicked
+    private void phrio3_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_phrio3_txtMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_rio1_txt2MouseClicked
+    }//GEN-LAST:event_phrio3_txtMouseClicked
 
-    private void rio1_txt3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rio1_txt3MouseClicked
+    private void phrio5_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_phrio5_txtMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_rio1_txt3MouseClicked
+    }//GEN-LAST:event_phrio5_txtMouseClicked
 
-    private void rio1_txt4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rio1_txt4MouseClicked
+    private void phrio2_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_phrio2_txtMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_rio1_txt4MouseClicked
+    }//GEN-LAST:event_phrio2_txtMouseClicked
 
     private void testeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_testeActionPerformed
         
     }//GEN-LAST:event_testeActionPerformed
 
-    private void rio1_txt6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rio1_txt6MouseClicked
+    private void phrio4_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_phrio4_txtMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_rio1_txt6MouseClicked
+    }//GEN-LAST:event_phrio4_txtMouseClicked
 
     /**
      * @param args the command line arguments
@@ -398,7 +403,7 @@ public class Rios_GUI extends javax.swing.JFrame {
     }
 
     public void recebendo(String recebe){
-        rio1_txt.setText(recebe);
+        phrio1_txt.setText(recebe);
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -418,11 +423,11 @@ public class Rios_GUI extends javax.swing.JFrame {
     public static javax.swing.JLabel nomerio3_txt;
     public static javax.swing.JLabel nomerio4_txt;
     public static javax.swing.JLabel nomerio5_txt;
-    public static javax.swing.JLabel rio1_txt;
-    public static javax.swing.JLabel rio1_txt2;
-    public static javax.swing.JLabel rio1_txt3;
-    public static javax.swing.JLabel rio1_txt4;
-    public static javax.swing.JLabel rio1_txt6;
+    public static javax.swing.JLabel phrio1_txt;
+    public static javax.swing.JLabel phrio2_txt;
+    public static javax.swing.JLabel phrio3_txt;
+    public static javax.swing.JLabel phrio4_txt;
+    public static javax.swing.JLabel phrio5_txt;
     private javax.swing.JButton teste;
     // End of variables declaration//GEN-END:variables
 }
