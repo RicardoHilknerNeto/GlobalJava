@@ -5,6 +5,8 @@
  */
 package View;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author netoh
@@ -31,20 +33,21 @@ public class inicio_GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnoceanos = new javax.swing.JButton();
+        btnbusca = new javax.swing.JButton();
         btnrios1 = new javax.swing.JButton();
+        btnoceanos1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnoceanos.setText("Oceanos");
-        btnoceanos.addActionListener(new java.awt.event.ActionListener() {
+        btnbusca.setText("Busca");
+        btnbusca.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnoceanosActionPerformed(evt);
+                btnbuscaActionPerformed(evt);
             }
         });
-        getContentPane().add(btnoceanos, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 90, 90, 30));
+        getContentPane().add(btnbusca, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 190, 120, 40));
 
         btnrios1.setText("Rios");
         btnrios1.addActionListener(new java.awt.event.ActionListener() {
@@ -52,7 +55,15 @@ public class inicio_GUI extends javax.swing.JFrame {
                 btnrios1ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnrios1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 40, 90, 30));
+        getContentPane().add(btnrios1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 50, 120, 40));
+
+        btnoceanos1.setText("Oceanos");
+        btnoceanos1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnoceanos1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnoceanos1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, 120, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/menubg.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
@@ -61,17 +72,27 @@ public class inicio_GUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     
-    private void btnoceanosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnoceanosActionPerformed
-        Controller.Database.Oceans();
-        dispose();
-        new Oceanos_GUI().setVisible(true);
-    }//GEN-LAST:event_btnoceanosActionPerformed
+    private void btnbuscaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbuscaActionPerformed
+        String opt = JOptionPane.showInputDialog(null, "Digite 1 para buscar rios\nDigite 2 para buscar oceanos");
+        int number = Integer.parseInt(opt);
+        if(number == 1){
+            System.out.println("Rios");
+        }else if(number == 2){
+            System.out.println("Oceanos");
+        }else{
+            System.out.println("opt invalida");
+        }
+    }//GEN-LAST:event_btnbuscaActionPerformed
 
     private void btnrios1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnrios1ActionPerformed
         Controller.Database.Rivers();
         dispose();
         new Rios_GUI().setVisible(true);
     }//GEN-LAST:event_btnrios1ActionPerformed
+
+    private void btnoceanos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnoceanos1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnoceanos1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -110,7 +131,8 @@ public class inicio_GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnoceanos;
+    private javax.swing.JButton btnbusca;
+    private javax.swing.JButton btnoceanos1;
     private javax.swing.JButton btnrios1;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
