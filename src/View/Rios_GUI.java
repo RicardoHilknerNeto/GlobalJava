@@ -8,17 +8,40 @@ package View;
  *
  * @author netoh
  */
+    import Controller.Database;
+    import Controller.Rivers;
+    import java.util.ArrayList;
+    
+
+
+
 public class Rios_GUI extends javax.swing.JFrame {
+    
+    public static ArrayList<Rivers> rivers = new ArrayList<>();
+
+    public static void updatePHLabel(double madeiraPH) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
     /**
      * Creates new form Rios_GUI
      */
-    
+
 
             
     public Rios_GUI() {
+        rivers = new Database().rivers;
         initComponents();
+        loading();
     }
+    
+    public static void loading(){
+        
+        rio1_txt.setText(String.valueOf(rivers.get(0).pH));
+        nomerio1_txt.setText(rivers.get(0).name);
+    }
+
+
 
     
     /**
@@ -33,7 +56,7 @@ public class Rios_GUI extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         rio3_txt = new javax.swing.JLabel();
-        rio2_txt = new javax.swing.JLabel();
+        nomerio2_txt = new javax.swing.JLabel();
         rio4_txt = new javax.swing.JLabel();
         rio5_txt = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -49,7 +72,7 @@ public class Rios_GUI extends javax.swing.JFrame {
         rio1_txt3 = new javax.swing.JLabel();
         rio1_txt4 = new javax.swing.JLabel();
         rio1_txt6 = new javax.swing.JLabel();
-        rio1_txt1 = new javax.swing.JLabel();
+        nomerio1_txt = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         teste = new javax.swing.JButton();
 
@@ -66,10 +89,10 @@ public class Rios_GUI extends javax.swing.JFrame {
         rio3_txt.setForeground(new java.awt.Color(255, 255, 0));
         rio3_txt.setText("São Francisco");
 
-        rio2_txt.setBackground(new java.awt.Color(255, 255, 51));
-        rio2_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        rio2_txt.setForeground(new java.awt.Color(255, 255, 0));
-        rio2_txt.setText("Paraná");
+        nomerio2_txt.setBackground(new java.awt.Color(255, 255, 51));
+        nomerio2_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        nomerio2_txt.setForeground(new java.awt.Color(255, 255, 0));
+        nomerio2_txt.setText("Paraná");
 
         rio4_txt.setBackground(new java.awt.Color(255, 255, 51));
         rio4_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
@@ -104,7 +127,6 @@ public class Rios_GUI extends javax.swing.JFrame {
         rio1_txt.setBackground(new java.awt.Color(255, 255, 51));
         rio1_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         rio1_txt.setForeground(new java.awt.Color(255, 255, 0));
-        rio1_txt.setText("50%");
         rio1_txt.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 rio1_txtMouseClicked(evt);
@@ -163,7 +185,7 @@ public class Rios_GUI extends javax.swing.JFrame {
                     .addComponent(rio1_txt3)
                     .addComponent(rio1_txt2)
                     .addComponent(rio1_txt))
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -179,13 +201,12 @@ public class Rios_GUI extends javax.swing.JFrame {
                 .addComponent(rio1_txt3))
         );
 
-        rio1_txt1.setBackground(new java.awt.Color(255, 255, 51));
-        rio1_txt1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        rio1_txt1.setForeground(new java.awt.Color(255, 255, 0));
-        rio1_txt1.setText("Amazonas");
-        rio1_txt1.addMouseListener(new java.awt.event.MouseAdapter() {
+        nomerio1_txt.setBackground(new java.awt.Color(255, 255, 51));
+        nomerio1_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        nomerio1_txt.setForeground(new java.awt.Color(255, 255, 0));
+        nomerio1_txt.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                rio1_txt1MouseClicked(evt);
+                nomerio1_txtMouseClicked(evt);
             }
         });
 
@@ -220,8 +241,8 @@ public class Rios_GUI extends javax.swing.JFrame {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(rio2_txt)
-                                            .addComponent(rio1_txt1))
+                                            .addComponent(nomerio2_txt)
+                                            .addComponent(nomerio1_txt))
                                         .addGap(33, 33, 33)
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addComponent(jProgressBar2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
@@ -248,7 +269,7 @@ public class Rios_GUI extends javax.swing.JFrame {
                                         .addComponent(jLabel5)))
                                 .addGap(45, 45, 45)
                                 .addComponent(jLabel4)))))
-                .addContainerGap(40, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -256,21 +277,22 @@ public class Rios_GUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel3)
+                        .addComponent(jLabel5)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(rio1_txt1))
+                            .addComponent(nomerio1_txt))
                         .addGap(5, 5, 5)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(rio2_txt, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(nomerio2_txt, javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(jProgressBar2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(rio3_txt))
@@ -285,7 +307,7 @@ public class Rios_GUI extends javax.swing.JFrame {
                                 .addComponent(rio5_txt))
                             .addComponent(jProgressBar5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
                 .addComponent(teste)
                 .addContainerGap())
         );
@@ -306,12 +328,14 @@ public class Rios_GUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void rio1_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rio1_txtMouseClicked
-
+            Database.Rivers();    
+            Object madeiraPH = null;
+            rio1_txt.setText(String.valueOf(madeiraPH));
     }//GEN-LAST:event_rio1_txtMouseClicked
 
-    private void rio1_txt1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rio1_txt1MouseClicked
+    private void nomerio1_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nomerio1_txtMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_rio1_txt1MouseClicked
+    }//GEN-LAST:event_nomerio1_txtMouseClicked
 
     private void rio1_txt2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rio1_txt2MouseClicked
         // TODO add your handling code here:
@@ -326,7 +350,7 @@ public class Rios_GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_rio1_txt4MouseClicked
 
     private void testeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_testeActionPerformed
-        Controller.Database.Rivers();
+        
     }//GEN-LAST:event_testeActionPerformed
 
     private void rio1_txt6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rio1_txt6MouseClicked
@@ -368,6 +392,10 @@ public class Rios_GUI extends javax.swing.JFrame {
         });
     }
 
+    public void recebendo(String recebe){
+        rio1_txt.setText(recebe);
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
@@ -380,13 +408,13 @@ public class Rios_GUI extends javax.swing.JFrame {
     private javax.swing.JProgressBar jProgressBar3;
     private javax.swing.JProgressBar jProgressBar4;
     private javax.swing.JProgressBar jProgressBar5;
+    public static javax.swing.JLabel nomerio1_txt;
+    public static javax.swing.JLabel nomerio2_txt;
     public static javax.swing.JLabel rio1_txt;
-    public static javax.swing.JLabel rio1_txt1;
     public static javax.swing.JLabel rio1_txt2;
     public static javax.swing.JLabel rio1_txt3;
     public static javax.swing.JLabel rio1_txt4;
     public static javax.swing.JLabel rio1_txt6;
-    public static javax.swing.JLabel rio2_txt;
     public static javax.swing.JLabel rio3_txt;
     public static javax.swing.JLabel rio4_txt;
     public static javax.swing.JLabel rio5_txt;

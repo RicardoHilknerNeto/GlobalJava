@@ -71,27 +71,7 @@ public static String validateUser() {
 
 // Rios
 
- public static class River {
-        public static Object rivers;
-        private String name;
-        private double pH;
-        private double flow;
-
-        public River(String name, double pH, double flow) {
-            this.name = name;
-            this.pH = pH;
-            this.flow = flow;
-        }
-
-        public double getPH() {
-            return pH;
-        }
-
-        @Override
-        public String toString() {
-            return "River{" + "name=" + name + ", pH=" + pH + ", flow=" + flow + '}';
-        }
-    }
+ 
 }
 
 

@@ -11,12 +11,16 @@ package View;
  */
 public class inicio_GUI extends javax.swing.JFrame {
 
+    inicio_GUI enviadados;
+    
     /**
      * Creates new form inicio
      */
+    
     public inicio_GUI() {
         initComponents();
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -47,10 +51,13 @@ public class inicio_GUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    
     private void btnriosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnriosActionPerformed
         Controller.Database.Rivers();
         dispose();
         new Rios_GUI().setVisible(true);
+        
+      
     }//GEN-LAST:event_btnriosActionPerformed
 
     /**
