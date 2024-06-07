@@ -69,8 +69,6 @@ public static String validateUser() {
     return null; // Retorna null se o usuário não for encontrado
 }
 
-// Rios
-
  
 }
 

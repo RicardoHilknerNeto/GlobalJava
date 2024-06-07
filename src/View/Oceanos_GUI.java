@@ -4,54 +4,44 @@
  * and open the template in the editor.
  */
 package View;
+
 /**
  *
  * @author netoh
  */
+
+
     import Controller.Database;
-    import Controller.Rivers;
+    import Controller.Oceans;
     import java.util.ArrayList;
+
+public class Oceanos_GUI extends javax.swing.JFrame {
     
-
-
-
-public class Rios_GUI extends javax.swing.JFrame {
-    
-    public static ArrayList<Rivers> rivers = new ArrayList<>();
-
-   
+    public static ArrayList<Oceans> oceans = new ArrayList<>();
 
     /**
-     * Creates new form Rios_GUI
+     * Creates new form Oceanos
      */
-
-
-            
-    public Rios_GUI() {
-        rivers = new Database().rivers;
-        initComponents();
-        loading();
-    }
+   public Oceanos_GUI() {
+    oceans = new Database().oceans;
+    initComponents();
+    loading(); 
+}
     
-    public static void loading(){
-        
-        nomerio1_txt.setText(rivers.get(0).name);
-        nomerio2_txt.setText(rivers.get(1).name);
-        nomerio3_txt.setText(rivers.get(2).name);
-        nomerio4_txt.setText(rivers.get(3).name);
-        nomerio5_txt.setText(rivers.get(4).name);
-        
-        phrio1_txt.setText(String.valueOf(rivers.get(0).pH));
-        phrio2_txt.setText(String.valueOf(rivers.get(1).pH));
-        phrio3_txt.setText(String.valueOf(rivers.get(2).pH));
-        phrio4_txt.setText(String.valueOf(rivers.get(3).pH));
-        phrio5_txt.setText(String.valueOf(rivers.get(4).pH));
-        
+   public static void loading(){
+        nomeoceano1_txt.setText(oceans.get(0).name);
+        nomeoceano2_txt.setText(oceans.get(1).name);
+        nomeoceano3_txt.setText(oceans.get(2).name);
+        nomeoceano4_txt.setText(oceans.get(3).name);
+        nomeoceano5_txt.setText(oceans.get(4).name);
+
+        phoceano1_txt.setText(String.valueOf(oceans.get(0).pH));
+        phoceano2_txt.setText(String.valueOf(oceans.get(1).pH));
+        phoceano3_txt.setText(String.valueOf(oceans.get(2).pH));
+        phoceano4_txt.setText(String.valueOf(oceans.get(3).pH));
+        phoceano5_txt.setText(String.valueOf(oceans.get(4).pH));   
     }
 
-
-
-    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -63,10 +53,10 @@ public class Rios_GUI extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        nomerio3_txt = new javax.swing.JLabel();
-        nomerio2_txt = new javax.swing.JLabel();
-        nomerio4_txt = new javax.swing.JLabel();
-        nomerio5_txt = new javax.swing.JLabel();
+        nomeoceano3_txt = new javax.swing.JLabel();
+        nomeoceano2_txt = new javax.swing.JLabel();
+        nomeoceano4_txt = new javax.swing.JLabel();
+        nomeoceano5_txt = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jProgressBar1 = new javax.swing.JProgressBar();
         jProgressBar2 = new javax.swing.JProgressBar();
@@ -75,12 +65,12 @@ public class Rios_GUI extends javax.swing.JFrame {
         jProgressBar5 = new javax.swing.JProgressBar();
         jLabel4 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        phrio1_txt = new javax.swing.JLabel();
-        phrio3_txt = new javax.swing.JLabel();
-        phrio5_txt = new javax.swing.JLabel();
-        phrio2_txt = new javax.swing.JLabel();
-        phrio4_txt = new javax.swing.JLabel();
-        nomerio1_txt = new javax.swing.JLabel();
+        phoceano1_txt = new javax.swing.JLabel();
+        phoceano3_txt = new javax.swing.JLabel();
+        phoceano5_txt = new javax.swing.JLabel();
+        phoceano2_txt = new javax.swing.JLabel();
+        phoceano4_txt = new javax.swing.JLabel();
+        nomeoceano1_txt = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         btnvoltar = new javax.swing.JButton();
 
@@ -90,34 +80,33 @@ public class Rios_GUI extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Rios");
+        jLabel1.setText("Oceanos");
 
-        nomerio3_txt.setBackground(new java.awt.Color(255, 255, 51));
-        nomerio3_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        nomerio3_txt.setForeground(new java.awt.Color(255, 255, 0));
-        nomerio3_txt.setText("null");
+        nomeoceano3_txt.setBackground(new java.awt.Color(255, 255, 51));
+        nomeoceano3_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        nomeoceano3_txt.setForeground(new java.awt.Color(255, 255, 0));
+        nomeoceano3_txt.setText("null");
 
-        nomerio2_txt.setBackground(new java.awt.Color(255, 255, 51));
-        nomerio2_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        nomerio2_txt.setForeground(new java.awt.Color(255, 255, 0));
-        nomerio2_txt.setText("null");
+        nomeoceano2_txt.setBackground(new java.awt.Color(255, 255, 51));
+        nomeoceano2_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        nomeoceano2_txt.setForeground(new java.awt.Color(255, 255, 0));
+        nomeoceano2_txt.setText("null");
 
-        nomerio4_txt.setBackground(new java.awt.Color(255, 255, 51));
-        nomerio4_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        nomerio4_txt.setForeground(new java.awt.Color(255, 255, 0));
-        nomerio4_txt.setText("null");
+        nomeoceano4_txt.setBackground(new java.awt.Color(255, 255, 51));
+        nomeoceano4_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        nomeoceano4_txt.setForeground(new java.awt.Color(255, 255, 0));
+        nomeoceano4_txt.setText("null");
 
-        nomerio5_txt.setBackground(new java.awt.Color(255, 255, 51));
-        nomerio5_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        nomerio5_txt.setForeground(new java.awt.Color(255, 255, 0));
-        nomerio5_txt.setText("null");
+        nomeoceano5_txt.setBackground(new java.awt.Color(255, 255, 51));
+        nomeoceano5_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        nomeoceano5_txt.setForeground(new java.awt.Color(255, 255, 0));
+        nomeoceano5_txt.setText("null");
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(102, 255, 255));
         jLabel3.setText("Nome");
 
         jProgressBar1.setToolTipText("");
-        jProgressBar1.setValue(50);
 
         jProgressBar2.setValue(30);
 
@@ -133,53 +122,53 @@ public class Rios_GUI extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 51));
 
-        phrio1_txt.setBackground(new java.awt.Color(255, 255, 51));
-        phrio1_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        phrio1_txt.setForeground(new java.awt.Color(255, 255, 0));
-        phrio1_txt.setText("null");
-        phrio1_txt.addMouseListener(new java.awt.event.MouseAdapter() {
+        phoceano1_txt.setBackground(new java.awt.Color(255, 255, 51));
+        phoceano1_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        phoceano1_txt.setForeground(new java.awt.Color(255, 255, 0));
+        phoceano1_txt.setText("null");
+        phoceano1_txt.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                phrio1_txtMouseClicked(evt);
+                phoceano1_txtMouseClicked(evt);
             }
         });
 
-        phrio3_txt.setBackground(new java.awt.Color(255, 255, 51));
-        phrio3_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        phrio3_txt.setForeground(new java.awt.Color(255, 255, 0));
-        phrio3_txt.setText("null");
-        phrio3_txt.addMouseListener(new java.awt.event.MouseAdapter() {
+        phoceano3_txt.setBackground(new java.awt.Color(255, 255, 51));
+        phoceano3_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        phoceano3_txt.setForeground(new java.awt.Color(255, 255, 0));
+        phoceano3_txt.setText("null");
+        phoceano3_txt.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                phrio3_txtMouseClicked(evt);
+                phoceano3_txtMouseClicked(evt);
             }
         });
 
-        phrio5_txt.setBackground(new java.awt.Color(255, 255, 51));
-        phrio5_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        phrio5_txt.setForeground(new java.awt.Color(255, 255, 0));
-        phrio5_txt.setText("null");
-        phrio5_txt.addMouseListener(new java.awt.event.MouseAdapter() {
+        phoceano5_txt.setBackground(new java.awt.Color(255, 255, 51));
+        phoceano5_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        phoceano5_txt.setForeground(new java.awt.Color(255, 255, 0));
+        phoceano5_txt.setText("null");
+        phoceano5_txt.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                phrio5_txtMouseClicked(evt);
+                phoceano5_txtMouseClicked(evt);
             }
         });
 
-        phrio2_txt.setBackground(new java.awt.Color(255, 255, 51));
-        phrio2_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        phrio2_txt.setForeground(new java.awt.Color(255, 255, 0));
-        phrio2_txt.setText("null");
-        phrio2_txt.addMouseListener(new java.awt.event.MouseAdapter() {
+        phoceano2_txt.setBackground(new java.awt.Color(255, 255, 51));
+        phoceano2_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        phoceano2_txt.setForeground(new java.awt.Color(255, 255, 0));
+        phoceano2_txt.setText("null");
+        phoceano2_txt.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                phrio2_txtMouseClicked(evt);
+                phoceano2_txtMouseClicked(evt);
             }
         });
 
-        phrio4_txt.setBackground(new java.awt.Color(255, 255, 51));
-        phrio4_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        phrio4_txt.setForeground(new java.awt.Color(255, 255, 0));
-        phrio4_txt.setText("null");
-        phrio4_txt.addMouseListener(new java.awt.event.MouseAdapter() {
+        phoceano4_txt.setBackground(new java.awt.Color(255, 255, 51));
+        phoceano4_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        phoceano4_txt.setForeground(new java.awt.Color(255, 255, 0));
+        phoceano4_txt.setText("null");
+        phoceano4_txt.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                phrio4_txtMouseClicked(evt);
+                phoceano4_txtMouseClicked(evt);
             }
         });
 
@@ -190,34 +179,34 @@ public class Rios_GUI extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(phrio4_txt)
-                    .addComponent(phrio2_txt)
-                    .addComponent(phrio5_txt)
-                    .addComponent(phrio3_txt)
-                    .addComponent(phrio1_txt))
+                    .addComponent(phoceano4_txt)
+                    .addComponent(phoceano2_txt)
+                    .addComponent(phoceano5_txt)
+                    .addComponent(phoceano3_txt)
+                    .addComponent(phoceano1_txt))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(phrio1_txt)
+                .addComponent(phoceano1_txt)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(phrio2_txt)
+                .addComponent(phoceano2_txt)
                 .addGap(8, 8, 8)
-                .addComponent(phrio3_txt)
+                .addComponent(phoceano3_txt)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(phrio4_txt)
+                .addComponent(phoceano4_txt)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(phrio5_txt))
+                .addComponent(phoceano5_txt))
         );
 
-        nomerio1_txt.setBackground(new java.awt.Color(255, 255, 51));
-        nomerio1_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        nomerio1_txt.setForeground(new java.awt.Color(255, 255, 0));
-        nomerio1_txt.setText("null");
-        nomerio1_txt.addMouseListener(new java.awt.event.MouseAdapter() {
+        nomeoceano1_txt.setBackground(new java.awt.Color(255, 255, 51));
+        nomeoceano1_txt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        nomeoceano1_txt.setForeground(new java.awt.Color(255, 255, 0));
+        nomeoceano1_txt.setText("null");
+        nomeoceano1_txt.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                nomerio1_txtMouseClicked(evt);
+                nomeoceano1_txtMouseClicked(evt);
             }
         });
 
@@ -250,17 +239,17 @@ public class Rios_GUI extends javax.swing.JFrame {
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(nomerio2_txt)
-                                                    .addComponent(nomerio1_txt))
+                                                    .addComponent(nomeoceano2_txt)
+                                                    .addComponent(nomeoceano1_txt))
                                                 .addGap(33, 33, 33)
                                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                                     .addComponent(jProgressBar2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                                                     .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                             .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(nomerio3_txt)
-                                                    .addComponent(nomerio4_txt)
-                                                    .addComponent(nomerio5_txt))
+                                                    .addComponent(nomeoceano3_txt)
+                                                    .addComponent(nomeoceano4_txt)
+                                                    .addComponent(nomeoceano5_txt))
                                                 .addGap(7, 7, 7)
                                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                                     .addComponent(jProgressBar4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
@@ -300,24 +289,24 @@ public class Rios_GUI extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(nomerio1_txt))
+                            .addComponent(nomeoceano1_txt))
                         .addGap(5, 5, 5)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(nomerio2_txt, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(nomeoceano2_txt, javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(jProgressBar2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(nomerio3_txt))
+                                .addComponent(nomeoceano3_txt))
                             .addComponent(jProgressBar3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(nomerio4_txt, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(nomeoceano4_txt, javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(jProgressBar4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(nomerio5_txt))
+                                .addComponent(nomeoceano5_txt))
                             .addComponent(jProgressBar5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
@@ -340,31 +329,29 @@ public class Rios_GUI extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void phrio1_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_phrio1_txtMouseClicked
-            Database.Rivers();    
-            Object madeiraPH = null;
-            phrio1_txt.setText(String.valueOf(madeiraPH));
-    }//GEN-LAST:event_phrio1_txtMouseClicked
+    private void phoceano1_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_phoceano1_txtMouseClicked
+        
+    }//GEN-LAST:event_phoceano1_txtMouseClicked
 
-    private void nomerio1_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nomerio1_txtMouseClicked
+    private void phoceano3_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_phoceano3_txtMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_nomerio1_txtMouseClicked
+    }//GEN-LAST:event_phoceano3_txtMouseClicked
 
-    private void phrio3_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_phrio3_txtMouseClicked
+    private void phoceano5_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_phoceano5_txtMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_phrio3_txtMouseClicked
+    }//GEN-LAST:event_phoceano5_txtMouseClicked
 
-    private void phrio5_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_phrio5_txtMouseClicked
+    private void phoceano2_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_phoceano2_txtMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_phrio5_txtMouseClicked
+    }//GEN-LAST:event_phoceano2_txtMouseClicked
 
-    private void phrio2_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_phrio2_txtMouseClicked
+    private void phoceano4_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_phoceano4_txtMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_phrio2_txtMouseClicked
+    }//GEN-LAST:event_phoceano4_txtMouseClicked
 
-    private void phrio4_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_phrio4_txtMouseClicked
+    private void nomeoceano1_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nomeoceano1_txtMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_phrio4_txtMouseClicked
+    }//GEN-LAST:event_nomeoceano1_txtMouseClicked
 
     private void btnvoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnvoltarActionPerformed
         dispose();
@@ -388,28 +375,25 @@ public class Rios_GUI extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Rios_GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Oceanos_GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Rios_GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Oceanos_GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Rios_GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Oceanos_GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Rios_GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Oceanos_GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Rios_GUI().setVisible(true);
+                new Oceanos_GUI().setVisible(true);
             }
         });
     }
 
-    public void recebendo(String recebe){
-        phrio1_txt.setText(recebe);
-    }
-    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnvoltar;
     private javax.swing.JLabel jLabel1;
@@ -423,15 +407,15 @@ public class Rios_GUI extends javax.swing.JFrame {
     private javax.swing.JProgressBar jProgressBar3;
     private javax.swing.JProgressBar jProgressBar4;
     private javax.swing.JProgressBar jProgressBar5;
-    public static javax.swing.JLabel nomerio1_txt;
-    public static javax.swing.JLabel nomerio2_txt;
-    public static javax.swing.JLabel nomerio3_txt;
-    public static javax.swing.JLabel nomerio4_txt;
-    public static javax.swing.JLabel nomerio5_txt;
-    public static javax.swing.JLabel phrio1_txt;
-    public static javax.swing.JLabel phrio2_txt;
-    public static javax.swing.JLabel phrio3_txt;
-    public static javax.swing.JLabel phrio4_txt;
-    public static javax.swing.JLabel phrio5_txt;
+    public static javax.swing.JLabel nomeoceano1_txt;
+    public static javax.swing.JLabel nomeoceano2_txt;
+    public static javax.swing.JLabel nomeoceano3_txt;
+    public static javax.swing.JLabel nomeoceano4_txt;
+    public static javax.swing.JLabel nomeoceano5_txt;
+    public static javax.swing.JLabel phoceano1_txt;
+    public static javax.swing.JLabel phoceano2_txt;
+    public static javax.swing.JLabel phoceano3_txt;
+    public static javax.swing.JLabel phoceano4_txt;
+    public static javax.swing.JLabel phoceano5_txt;
     // End of variables declaration//GEN-END:variables
 }

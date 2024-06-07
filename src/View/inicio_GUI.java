@@ -31,19 +31,28 @@ public class inicio_GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnrios = new javax.swing.JButton();
+        btnoceanos = new javax.swing.JButton();
+        btnrios1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnrios.setText("Rios");
-        btnrios.addActionListener(new java.awt.event.ActionListener() {
+        btnoceanos.setText("Oceanos");
+        btnoceanos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnriosActionPerformed(evt);
+                btnoceanosActionPerformed(evt);
             }
         });
-        getContentPane().add(btnrios, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 40, 90, 30));
+        getContentPane().add(btnoceanos, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 90, 90, 30));
+
+        btnrios1.setText("Rios");
+        btnrios1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnrios1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnrios1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 40, 90, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/menubg.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
@@ -52,13 +61,17 @@ public class inicio_GUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     
-    private void btnriosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnriosActionPerformed
+    private void btnoceanosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnoceanosActionPerformed
+        Controller.Database.Oceans();
+        dispose();
+        new Oceanos_GUI().setVisible(true);
+    }//GEN-LAST:event_btnoceanosActionPerformed
+
+    private void btnrios1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnrios1ActionPerformed
         Controller.Database.Rivers();
         dispose();
         new Rios_GUI().setVisible(true);
-        
-      
-    }//GEN-LAST:event_btnriosActionPerformed
+    }//GEN-LAST:event_btnrios1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -97,7 +110,8 @@ public class inicio_GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnrios;
+    private javax.swing.JButton btnoceanos;
+    private javax.swing.JButton btnrios1;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

@@ -47,9 +47,9 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="175" max="-2" attributes="0"/>
                                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -60,26 +60,26 @@
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="nomerio2_txt" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="nomerio1_txt" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="nomeoceano2_txt" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="nomeoceano1_txt" alignment="0" min="-2" max="-2" attributes="0"/>
                                                   </Group>
                                                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="jProgressBar2" pref="0" max="32767" attributes="0"/>
-                                                      <Component id="jProgressBar1" min="-2" pref="100" max="-2" attributes="0"/>
+                                                      <Component id="jProgressBar2" alignment="0" pref="0" max="32767" attributes="0"/>
+                                                      <Component id="jProgressBar1" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="nomerio3_txt" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="nomerio4_txt" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="nomerio5_txt" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="nomeoceano3_txt" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="nomeoceano4_txt" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="nomeoceano5_txt" alignment="0" min="-2" max="-2" attributes="0"/>
                                                   </Group>
                                                   <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                                       <Component id="jProgressBar4" alignment="0" pref="0" max="32767" attributes="0"/>
                                                       <Component id="jProgressBar3" alignment="0" pref="0" max="32767" attributes="0"/>
-                                                      <Component id="jProgressBar5" min="-2" pref="100" max="-2" attributes="0"/>
+                                                      <Component id="jProgressBar5" alignment="1" min="-2" pref="100" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
                                           </Group>
@@ -122,7 +122,7 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabel4" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
+                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                           <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
@@ -131,18 +131,18 @@
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="jProgressBar1" min="-2" max="-2" attributes="0"/>
-                              <Component id="nomerio1_txt" min="-2" max="-2" attributes="0"/>
+                              <Component id="jProgressBar1" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="nomeoceano1_txt" alignment="1" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="nomerio2_txt" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="nomeoceano2_txt" alignment="1" min="-2" max="-2" attributes="0"/>
                                       <Component id="jProgressBar2" alignment="1" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="nomerio3_txt" min="-2" max="-2" attributes="0"/>
+                                  <Component id="nomeoceano3_txt" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Component id="jProgressBar3" alignment="1" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -150,16 +150,16 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="nomerio4_txt" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="nomeoceano4_txt" alignment="1" min="-2" max="-2" attributes="0"/>
                                       <Component id="jProgressBar4" alignment="1" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="nomerio5_txt" min="-2" max="-2" attributes="0"/>
+                                  <Component id="nomeoceano5_txt" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Component id="jProgressBar5" alignment="1" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                      <Component id="jPanel2" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="40" max="32767" attributes="0"/>
                   <Component id="btnvoltar" min="-2" max="-2" attributes="0"/>
@@ -177,10 +177,10 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Rios"/>
+            <Property name="text" type="java.lang.String" value="Oceanos"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="nomerio3_txt">
+        <Component class="javax.swing.JLabel" name="nomeoceano3_txt">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="ff" red="ff" type="rgb"/>
@@ -197,7 +197,7 @@
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JLabel" name="nomerio2_txt">
+        <Component class="javax.swing.JLabel" name="nomeoceano2_txt">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="ff" red="ff" type="rgb"/>
@@ -214,7 +214,7 @@
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JLabel" name="nomerio4_txt">
+        <Component class="javax.swing.JLabel" name="nomeoceano4_txt">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="ff" red="ff" type="rgb"/>
@@ -231,7 +231,7 @@
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JLabel" name="nomerio5_txt">
+        <Component class="javax.swing.JLabel" name="nomeoceano5_txt">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="ff" red="ff" type="rgb"/>
@@ -261,7 +261,7 @@
         </Component>
         <Component class="javax.swing.JProgressBar" name="jProgressBar1">
           <Properties>
-            <Property name="toolTipText" type="java.lang.String" value="" postCode="jProgressBar1.setValue(50);"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
@@ -317,11 +317,11 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="phrio4_txt" min="-2" max="-2" attributes="0"/>
-                          <Component id="phrio2_txt" min="-2" max="-2" attributes="0"/>
-                          <Component id="phrio5_txt" min="-2" max="-2" attributes="0"/>
-                          <Component id="phrio3_txt" min="-2" max="-2" attributes="0"/>
-                          <Component id="phrio1_txt" min="-2" max="-2" attributes="0"/>
+                          <Component id="phoceano4_txt" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="phoceano2_txt" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="phoceano5_txt" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="phoceano3_txt" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="phoceano1_txt" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
@@ -330,21 +330,21 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="phrio1_txt" min="-2" max="-2" attributes="0"/>
+                      <Component id="phoceano1_txt" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="phrio2_txt" min="-2" max="-2" attributes="0"/>
+                      <Component id="phoceano2_txt" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-                      <Component id="phrio3_txt" min="-2" max="-2" attributes="0"/>
+                      <Component id="phoceano3_txt" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="phrio4_txt" min="-2" max="-2" attributes="0"/>
+                      <Component id="phoceano4_txt" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="phrio5_txt" min="-2" max="-2" attributes="0"/>
+                      <Component id="phoceano5_txt" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="phrio1_txt">
+            <Component class="javax.swing.JLabel" name="phoceano1_txt">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="33" green="ff" red="ff" type="rgb"/>
@@ -358,13 +358,13 @@
                 <Property name="text" type="java.lang.String" value="null"/>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="phrio1_txtMouseClicked"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="phoceano1_txtMouseClicked"/>
               </Events>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
             </Component>
-            <Component class="javax.swing.JLabel" name="phrio3_txt">
+            <Component class="javax.swing.JLabel" name="phoceano3_txt">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="33" green="ff" red="ff" type="rgb"/>
@@ -378,13 +378,13 @@
                 <Property name="text" type="java.lang.String" value="null"/>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="phrio3_txtMouseClicked"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="phoceano3_txtMouseClicked"/>
               </Events>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
             </Component>
-            <Component class="javax.swing.JLabel" name="phrio5_txt">
+            <Component class="javax.swing.JLabel" name="phoceano5_txt">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="33" green="ff" red="ff" type="rgb"/>
@@ -398,13 +398,13 @@
                 <Property name="text" type="java.lang.String" value="null"/>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="phrio5_txtMouseClicked"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="phoceano5_txtMouseClicked"/>
               </Events>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
             </Component>
-            <Component class="javax.swing.JLabel" name="phrio2_txt">
+            <Component class="javax.swing.JLabel" name="phoceano2_txt">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="33" green="ff" red="ff" type="rgb"/>
@@ -418,13 +418,13 @@
                 <Property name="text" type="java.lang.String" value="null"/>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="phrio2_txtMouseClicked"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="phoceano2_txtMouseClicked"/>
               </Events>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
             </Component>
-            <Component class="javax.swing.JLabel" name="phrio4_txt">
+            <Component class="javax.swing.JLabel" name="phoceano4_txt">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="33" green="ff" red="ff" type="rgb"/>
@@ -438,7 +438,7 @@
                 <Property name="text" type="java.lang.String" value="null"/>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="phrio4_txtMouseClicked"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="phoceano4_txtMouseClicked"/>
               </Events>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
@@ -446,7 +446,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JLabel" name="nomerio1_txt">
+        <Component class="javax.swing.JLabel" name="nomeoceano1_txt">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="ff" red="ff" type="rgb"/>
@@ -460,7 +460,7 @@
             <Property name="text" type="java.lang.String" value="null"/>
           </Properties>
           <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="nomerio1_txtMouseClicked"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="nomeoceano1_txtMouseClicked"/>
           </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
