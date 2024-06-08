@@ -76,9 +76,9 @@ public class inicio_GUI extends javax.swing.JFrame {
         String opt = JOptionPane.showInputDialog(null, "Digite 1 para buscar rios\nDigite 2 para buscar oceanos");
         int number = Integer.parseInt(opt);
         if(number == 1){
-            System.out.println("Rios");
+            JOptionPane.showMessageDialog(null, "Amazonas\nParaná\nSão Francisco\nTocantins\nMadeira");
         }else if(number == 2){
-            System.out.println("Oceanos");
+            JOptionPane.showMessageDialog(null, "Ártico\nAtlântico\nPacífico\nÍndico\nAntártico");
         }else{
             System.out.println("opt invalida");
         }
@@ -91,7 +91,9 @@ public class inicio_GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnrios1ActionPerformed
 
     private void btnoceanos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnoceanos1ActionPerformed
-        // TODO add your handling code here:
+        Controller.Database.Oceans();
+        dispose();
+        new Oceanos_GUI().setVisible(true);
     }//GEN-LAST:event_btnoceanos1ActionPerformed
 
     /**

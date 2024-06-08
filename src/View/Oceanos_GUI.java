@@ -107,14 +107,15 @@ public class Oceanos_GUI extends javax.swing.JFrame {
         jLabel3.setText("Nome");
 
         jProgressBar1.setToolTipText("");
+        jProgressBar1.setValue(120);
 
-        jProgressBar2.setValue(30);
+        jProgressBar2.setValue(82);
 
-        jProgressBar3.setValue(20);
+        jProgressBar3.setValue(90);
 
-        jProgressBar4.setValue(25);
+        jProgressBar4.setValue(72);
 
-        jProgressBar5.setValue(50);
+        jProgressBar5.setValue(107);
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(102, 255, 255));
