@@ -7,7 +7,7 @@ package Controller;
 
 /**
  *
- * @author netoh
+ * @author Bianca
  */
 
 public class Rivers {

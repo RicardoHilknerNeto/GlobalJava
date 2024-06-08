@@ -7,7 +7,7 @@ package View;
 
 /**
  *
- * @author netoh
+ * @author Bianca
  */
 public class cadastro_GUI extends javax.swing.JFrame {
 

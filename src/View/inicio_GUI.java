@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author netoh
+ * @author Bianca
  */
 public class inicio_GUI extends javax.swing.JFrame {
 

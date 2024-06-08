@@ -7,7 +7,7 @@ package View;
 
 /**
  *
- * @author netoh
+ * @author Bianca
  */
 public class menu_GUI extends javax.swing.JFrame {
 

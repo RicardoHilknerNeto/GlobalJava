@@ -7,7 +7,7 @@ package View;
 
 /**
  *
- * @author netoh
+ * @author Bianca
  */
 
 

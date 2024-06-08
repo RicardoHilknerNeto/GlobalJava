@@ -7,7 +7,7 @@ package main;
 
 /**
  *
- * @author netoh
+ * @author Bianca
  */
 public class Main {
 

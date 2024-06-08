@@ -6,7 +6,7 @@
 package View;
 /**
  *
- * @author netoh
+ * @author Bianca
  */
     import Controller.Database;
     import Controller.Rivers;
@@ -18,12 +18,6 @@ package View;
 public class Rios_GUI extends javax.swing.JFrame {
     
     public static ArrayList<Rivers> rivers = new ArrayList<>();
-
-   
-
-    /**
-     * Creates new form Rios_GUI
-     */
 
 
             
@@ -341,9 +335,7 @@ public class Rios_GUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void phrio1_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_phrio1_txtMouseClicked
-            Database.Rivers();    
-            Object madeiraPH = null;
-            phrio1_txt.setText(String.valueOf(madeiraPH));
+
     }//GEN-LAST:event_phrio1_txtMouseClicked
 
     private void nomerio1_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nomerio1_txtMouseClicked
